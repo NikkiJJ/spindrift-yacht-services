@@ -1,0 +1,36 @@
+.navbar-custom {
+  background-color: #2b2a2a !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #ffffff !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+#nav-sig {
+  padding-left: 5px;
+}
+
+.nav-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+  position: relative;
+  text-decoration: none;
+  font-weight: 150 !important;
+}
+
+.navbar-custom .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-custom .nav-item {
+  margin-left: 10px;
+}
