@@ -1,0 +1,32 @@
+.cover-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.first-container {
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+#welcome-text {
+  color: red;
+  padding-top: 10px;
+}
+
+.first-container-text {
+  display: flex;
+}
+
+.title-text {
+  letter-spacing: 2px;
+}
+
+.right-text {
+  padding: 20px;
+}
+
+.left-text {
+  padding: 20px;
+}
