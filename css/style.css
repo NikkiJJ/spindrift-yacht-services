@@ -5,14 +5,14 @@
   margin: 0 auto;
 }
 
-.first-container {
-  padding-left: 100px;
-  padding-right: 200px;
+.container-layout {
+  padding-left: 220px;
+  padding-right: 220px;
 }
 
-#welcome-text {
-  color: red;
-  padding-top: 10px;
+.red-text {
+  color: rgb(127, 24, 24);
+  padding-top: 20px;
 }
 
 .first-container-text {
@@ -20,7 +20,7 @@
 }
 
 .title-text {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .right-text {
@@ -28,5 +28,97 @@
 }
 
 .left-text {
-  padding: 20px;
+  padding: 20px 20px 20px 0;
+}
+
+.button {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:hover {
+  color: white;
+  background-color: rgb(127, 24, 24);
+  text-decoration: none;
+}
+
+.button:active, .button:visited {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.second-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents images from wrapping to the next line */
+  padding: 20px; /* Adds some padding around the container */
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; /* Centers the container horizontally */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.second-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.scroll-container {
+  display: inline-flex; /* Places images side by side */
+  padding: 30px;
+  text-align: center;
+}
+
+.scroll-image {
+  width: 300px; /* Set the desired width of your images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Optional: Adds some space between images */
+}
+
+.scroll-image:last-child {
+  margin-right: 0; /* Removes the margin after the last image */
+}
+
+.review-image {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.profile-image {
+  height: 400px;
+}
+
+.meet-mikey {
+  padding-right: 220px;
+  padding-left: 220px;
+}
+
+.meet-mikey-left {
+  padding-left: 20px;
+}
+
+.bottom-container {
+  padding-left: 300px;
+  padding-right: 300px;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.bottom-container::before {
+  content: "";
+  display: block;
+  width: 50%; /* Set the width of the border to 50% of the container */
+  border-top: 1px solid black; /* Set the border style */
+  margin: 0 auto; /* Center the border */
 }
