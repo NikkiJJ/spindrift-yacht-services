@@ -1,0 +1,30 @@
+.team-photo-container {
+  display: flex;
+  justify-content: space-between; /* Space evenly between cards */
+}
+
+.team-card {
+  padding: 10px;
+  text-align: center; /* Center the text under the image */
+  width: 30%; /* Set a consistent width for each card */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.team-image {
+  height: 300px;
+  margin-bottom: 10px; /* Add space between the image and the text */
+  transition: transform 0.3s ease; /* Smooth transition for the shrinking effect */
+}
+
+.team-image:hover {
+  transform: scale(0.95); /* Slightly shrink the image on hover */
+}
+
+.team-card p {
+  margin: 0; /* Remove default paragraph margin for better alignment */
+  padding-top: 10px; /* Add padding to separate text from the image */
+}
+
+.added-padding {
+  padding-left: 15px;
+}
