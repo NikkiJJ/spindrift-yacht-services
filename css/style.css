@@ -8,6 +8,22 @@ p {
   font-weight: 400; /* Regular weight */
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1; /* Allow main to grow and fill available space */
+  display: flex;
+}
+
 .cover-image {
   display: block;
   max-width: 100%;
@@ -21,7 +37,7 @@ p {
 }
 
 .red-text {
-  color: rgb(127, 24, 24);
+  color: #B02A29;
   padding-top: 20px;
 }
 
@@ -55,7 +71,7 @@ p {
 
 .button:hover {
   color: white;
-  background-color: rgb(127, 24, 24);
+  background-color: #B02A29;
   text-decoration: none;
 }
 
@@ -149,7 +165,7 @@ p {
 }
 
 .underline-button:hover {
-  color: red;
+  color: #B02A29;
   text-decoration: none;
 }
 

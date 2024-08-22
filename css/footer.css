@@ -6,7 +6,7 @@
   padding-top: 50px;
   padding-left: 60px;
   padding-bottom: 50px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .bottom-footer {
@@ -25,7 +25,7 @@
 }
 
 .social-icon {
-  color: red;
+  color: #B02A29;
   font-weight: bold;
   border: 1px solid black;
   border-radius: 50%;

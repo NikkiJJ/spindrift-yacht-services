@@ -1,0 +1,73 @@
+.contact-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.contact-left {
+  width: 50%;
+  padding: 50px;
+}
+
+.contact-right {
+  width: 50%;
+}
+
+.contact-image {
+  width: auto;
+  height: 100%;
+}
+
+.smaller-text {
+  font-size: smaller;
+  margin-bottom: 0px;
+}
+
+form {
+  max-width: 600px; /* Set a max-width to limit the width of the form */
+  margin: 0 auto; /* Center the form on the page */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
+  gap: 20px; /* Space between columns and rows */
+}
+
+label {
+  display: block; /* Ensure each label is on its own line */
+  margin-bottom: 5px; /* Add some space between the label and the input */
+  font-size: 16px;
+}
+
+.input-line {
+  width: 100%;
+  padding: 8px 0;
+  margin-bottom: 20px; /* Add space between input fields */
+  border: none;
+  border-bottom: 1px solid #000; /* Bottom border for the line effect */
+  background: none;
+  font-size: 16px; /* Set a smaller font size */
+  outline: none; /* Remove the default outline */
+}
+
+.input-line:focus {
+  border-bottom: 1px solid red; /* Change color on focus */
+}
+
+.underline-button {
+  display: block;
+  grid-column: span 2; /* Make the button span across both columns */
+  width: 15%; /* Make the button fill the width of the form */
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 20px; /* Add space between the last input and the button */
+}
+
+.underline-button:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
