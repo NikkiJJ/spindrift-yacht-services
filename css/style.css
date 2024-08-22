@@ -122,3 +122,29 @@
   border-top: 1px solid black; /* Set the border style */
   margin: 0 auto; /* Center the border */
 }
+
+.divider {
+  border-top: 1px solid #333;  /* Adjust thickness and color */
+  margin: 40px 0;              /* Adds space above and below the line */
+}
+
+.underline-button {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.underline-button:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.underline-button:active, .underline-button:visited {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}

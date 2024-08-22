@@ -1,0 +1,42 @@
+.top-footer {
+  background-color: #2b2a2a;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: lighter;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b2a2a;
+  color: white;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 50px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-icon {
+  color: red;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;      /* Vertically center the text */
+  justify-content: center;  /* Horizontally center the text */
+  text-align: center;       /* Ensure the text is centered */
+  line-height: 1;           /* Prevent any additional line spacing */
+  font-size: 16px;          /* Adjust the font size as needed */
+  margin: 0 5px;            /* Add some margin if you want spacing between icons */
+}
