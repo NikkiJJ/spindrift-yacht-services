@@ -1,0 +1,105 @@
+.guardianage-top {
+  display: flex;
+}
+
+.guardianage-top-left {
+  width: 50%;
+  padding: 100px;
+}
+
+.guardianage-top-right {
+  padding: 100px;
+  width: 50%;
+}
+
+.services-image {
+  height: 300px;
+  margin-bottom: 10px; /* Add space between the image and the text */
+  transition: transform 0.3s ease; /* Smooth transition for the shrinking effect */
+}
+
+.services-image:hover {
+  transform: scale(0.95); /* Slightly shrink the image on hover */
+}
+
+.packages-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.pop-image {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.image-title {
+  position: absolute;
+  text-align: left;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  color: white;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80%;
+}
+
+.text-section {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  align-self: flex-end; /* Keep the text-section at the bottom */
+  height: 100px; /* Set a fixed height for the text section */
+}
+
+.text-content {
+  position: relative; /* Positioned relative to the text section */
+  z-index: 1; /* Ensures this text is above the hidden text */
+}
+
+.text-section::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  top: 100%; /* Position it initially below the .text-section */
+  left: 0;
+  right: 0;
+  opacity: 0;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.text-section:hover::after {
+  opacity: 1;
+  top: 0; /* Slide up to the position above the .text-content */
+}
+
+
+.vertical-line {
+  width: 1px;
+  background-color: white;
+  height: 150px;
+  align-self: center;
+}

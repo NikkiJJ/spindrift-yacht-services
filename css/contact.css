@@ -48,7 +48,7 @@ label {
 }
 
 .input-line:focus {
-  border-bottom: 1px solid red; /* Change color on focus */
+  border-bottom: 1px solid #B02A29; /* Change color on focus */
 }
 
 .underline-button {
@@ -68,6 +68,6 @@ label {
 }
 
 .underline-button:hover {
-  color: black;
-  border-bottom: 1px solid black;
+  color: #B02A29;
+  border-bottom: 1px solid #B02A29;
 }
