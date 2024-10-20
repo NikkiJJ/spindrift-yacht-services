@@ -13,7 +13,7 @@
 }
 
 .services-image {
-  height: 300px;
+  width: 500px;
   margin-bottom: 10px; /* Add space between the image and the text */
   transition: transform 0.3s ease; /* Smooth transition for the shrinking effect */
 }

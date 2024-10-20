@@ -3,6 +3,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500 !important; /* Medium weight */
 }
 
+h2 {
+  white-space: nowrap;
+}
+
+
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 400; /* Regular weight */
@@ -50,7 +55,7 @@ main {
 }
 
 .right-text {
-  padding: 20px;
+  padding: 15px;
 }
 
 .left-text {
@@ -138,7 +143,8 @@ main {
   text-align: center;
   padding-top: 50px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .bottom-container::before {
