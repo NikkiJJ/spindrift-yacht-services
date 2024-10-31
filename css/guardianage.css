@@ -14,7 +14,7 @@
 
 .services-image {
   width: 500px;
-  margin-bottom: 10px; /* Add space between the image and the text */
+
   transition: transform 0.3s ease; /* Smooth transition for the shrinking effect */
 }
 
@@ -26,6 +26,7 @@
   position: relative;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
 }
 
 .image-wrapper {
@@ -69,7 +70,7 @@
   cursor: pointer;
   overflow: hidden;
   align-self: flex-end; /* Keep the text-section at the bottom */
-  height: 100px; /* Set a fixed height for the text section */
+  height: 150px; /* Set a fixed height for the text section */
 }
 
 .text-content {
