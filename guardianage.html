@@ -36,7 +36,42 @@
              maintained while you're away.
           </p>
             <br>
-          <a href="https://www.example.com" class="underline-button">REQUEST DETAILS</a>
+          <div class="accordion-small">
+            <div class="accordion-item" onclick="toggleAccordion(this)">
+                <div class="accordion-header">
+                    <span class="title">WHAT'S INCLUDED</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="column-container">
+                        <ul>
+                            <li>Afloat & Ashore</li>
+                            <li>Services all Year Round</li>
+                            <li>Assurance 365 Days a Year</li>
+                            <li>Boat Under Constant Supervision</li>
+                            <li>For Complete Peace of Mind</li>
+                            <li>Storm Watch</li>
+                            <li>Protection Whatever the Weather</li>
+                            <li>Airing</li>
+                            <li>Preventing Damp & Mould</li>
+                        </ul>
+                        <ul>
+                            <li>Regular Inspections</li>
+                            <li>Checking Lines, Bilges & Functions</li>
+                            <li>Engine Checks</li>
+                            <li>Keep Your Motor Running</li>
+                            <li>Ready for your Arrival</li>
+                            <li>Head Straight Out to Sea</li>
+                            <li>Transfer to your Yacht by Tender</li>
+                            <li>For Privacy at Anchor</li>
+                            <li>Outboard & Dinghy Maintenance</li>
+                            <li>No Job Too Small</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         </div>
         <div class="guardianage-top-right">
@@ -87,5 +122,22 @@
     </main>
 
     <div id="footer"></div>
+    <script>
+      function toggleAccordion(element) {
+          // Toggle the 'active' class on the clicked accordion item
+          element.classList.toggle("active");
+
+          // Get the accordion content within the clicked item
+          const content = element.querySelector(".accordion-content");
+
+          // If the content is open, close it; otherwise, open it
+          if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+          } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+          }
+      }
+      </script>
+
 </body>
 </html>

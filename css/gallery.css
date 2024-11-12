@@ -1,14 +1,16 @@
 .project-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
-  gap: 20px; /* Optional: Adds space between the grid items */
+  gap: 20px; /* Adds space between the grid items */
   padding-left: 140px;
   padding-right: 140px;
 }
 
 .project-image {
-  height: 500px;
-  margin-bottom: 10px; /* Add space between the image and the text */
+  width: 100%; /* Full width of the grid cell */
+  height: 500px; /* Set fixed height for uniform size */
+  object-fit: cover; /* Crop images to fill the container while preserving aspect ratio */
+  margin-bottom: 10px;
   transition: transform 0.3s ease; /* Smooth transition for the shrinking effect */
 }
 

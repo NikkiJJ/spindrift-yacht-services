@@ -12,6 +12,101 @@
   width: 50%;
 }
 
+/* Smaller Accordion Container */
+.accordion-small {
+  width: 60vw; /* 30% of the viewport width */
+  max-width: 100%;
+  /* margin: 20px auto; */
+  border: none !important; /* Ensures no border on accordion container */
+  background-color: transparent;
+}
+
+/* Reuse styles from .accordion-item */
+.accordion-small .accordion-item,
+.accordion-small .accordion-header,
+.accordion-small .accordion-content {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: transparent;
+}
+
+/* Ensure header style remains the same */
+.accordion-small .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Positions title on the left and icon on the right */
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  position: relative;
+  box-shadow: none !important;
+}
+
+.accordion-small .accordion-header .title {
+  text-align: left; /* Aligns title to the left */
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 20px;
+}
+
+.accordion-small .accordion-header .icon {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+  transition: transform 0.3s;
+  text-align: right; /* Aligns icon to the right */
+}
+
+.accordion-small .accordion-header::after {
+  content: "";
+  display: block;
+  width: 90%; /* 90% of the header width */
+  height: 1px;
+  background-color: #b4b4b4;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.accordion-small .accordion-header .number,
+.accordion-small .accordion-header .title,
+.accordion-small .accordion-header .icon {
+  font-size: 20px; /* Adjusted size for smaller accordion */
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Accordion Content Styling with Two Columns */
+.accordion-small .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: white;
+  padding: 0 15px;
+}
+
+.accordion-small .accordion-item.active .accordion-content {
+  max-height: 300px; /* Adjust as needed */
+}
+
+/* Two-column layout within the content */
+.accordion-small .accordion-content .column-container {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.accordion-small .accordion-content .column-container ul {
+  flex: 1; /* Each column takes equal width */
+  list-style-type: disc;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .services-image {
   width: 500px;
 

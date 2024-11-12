@@ -1,3 +1,25 @@
+.prerequisites {
+  padding: 50px;
+  text-align: center;
+}
+
+.prerequisites a {
+  color: black; /* Black color for default and visited state */
+}
+
+.prerequisites a:visited {
+  color: black; /* Ensures it remains black even after being visited */
+}
+
+.prerequisites a:hover {
+  color: #B02A29; /* Red color when hovering over the link */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+#other-services {
+  padding-left: 40px;
+}
+
 .services-card {
   display: flex;
   justify-content: space-between;
@@ -15,12 +37,12 @@
 }
 
 .serv-container-layout {
-  padding-left: 140px;
-  padding-right: 140px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .services-content {
-  width: 400px;
+  width: 600px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -28,4 +50,158 @@
 
 .services-text {
   font-size: smaller;
+}
+
+/* Accordion Container */
+.accordion {
+  width: 95vw; /* 90% of the viewport width */
+  max-width: 100%;
+  margin: 20px auto;
+  border: none !important; /* Ensures no border on accordion container */
+  background-color: transparent;
+}
+
+/* Accordion Items */
+.accordion-item,
+.accordion-header,
+.accordion-content {
+  border: none !important; /* Removes any borders on item, header, and content */
+  box-shadow: none !important; /* Ensures no shadow is applied */
+  outline: none !important; /* Removes any potential outlines */
+  background-color: transparent;
+}
+
+/* Accordion Header with Bottom Border Only */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #eceaea;
+  position: relative;
+  box-shadow: none !important; /* No shadow */
+}
+
+/* Bottom Border Only (90% Width and Centered) */
+.accordion-header::after {
+  content: "";
+  display: block;
+  width: 90%; /* 90% of the header width */
+  height: 1px; /* Border thickness */
+  background-color: #b4b4b4; /* Border color */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the border */
+}
+
+/* Number Styling */
+.accordion-header .number {
+  width: 30px;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 25px;
+}
+
+/* Title Styling */
+.accordion-header .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 25px;
+}
+
+/* Icon Styling */
+.accordion-header .icon {
+  margin-left: auto;
+  font-size: 25px;
+  transition: transform 0.3s;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+/* Accordion Content (Hidden by Default) */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #eceaea;
+  padding: 0 15px;
+}
+
+/* Active Accordion Content */
+.accordion-item.active .accordion-content {
+  max-height: 200px; /* Adjust as needed */
+}
+
+.accordion-header .number {
+  width: 30px;
+  margin-right: auto; /* Pushes the number to the far left */
+  text-align: center;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 25px;
+}
+
+.accordion-header .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the title in the middle */
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 25px;
+}
+
+.accordion-header .icon {
+  margin-left: auto;
+  font-size: 25px;
+  transition: transform 0.3s;
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #eceaea;
+  padding: 0 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.accordion-content ul {
+  padding: 50px 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.accordion-content ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px; /* Adjust the size as desired */
+  color: inherit; /* Ensures the bullet inherits the text color */
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 300px;
+}
+
+.accordion-item.active .accordion-header .icon {
+  transform: rotate(45deg); /* Rotate the icon when active */
 }
