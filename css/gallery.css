@@ -21,3 +21,33 @@
 .button-container {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .cover-image {
+    height: 150px;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Adjust project image size */
+  .project-image {
+    height: auto; /* Remove fixed height for responsive sizing */
+    max-height: 300px; /* Optional max height for smaller screens */
+  }
+
+  /* Center the cover image and make it responsive */
+  .cover-image {
+    width: 100%;
+    height: auto; /* Makes image responsive */
+    margin: 0 auto;
+  }
+
+  /* Ensure the button container has appropriate spacing */
+  .button-container {
+    padding-top: 20px;
+  }
+}

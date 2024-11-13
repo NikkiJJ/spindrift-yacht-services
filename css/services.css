@@ -205,3 +205,99 @@
 .accordion-item.active .accordion-header .icon {
   transform: rotate(45deg); /* Rotate the icon when active */
 }
+
+@media (max-width: 768px) {
+
+  .prerequisites {
+    padding-top: 0px;
+  }
+
+  .cover-image {
+    height: 150px;
+  }
+  /* Adjusting the accordion width */
+  .accordion {
+    width: 100%;
+  }
+
+  /* Reducing padding in accordion header */
+  .accordion-header {
+    padding: 15px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Adjust font size and alignment */
+  .accordion-header .number,
+  .accordion-header .title,
+  .accordion-header .icon {
+    font-size: 18px; /* Smaller font size on mobile */
+  }
+
+  .accordion-header .number {
+    margin: 0 0 10px 0; /* Margin to space out vertically */
+  }
+
+  .accordion-header .title {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust icon placement and size */
+  .accordion-header .icon {
+    margin: 0;
+  }
+
+  /* Reduce padding in accordion content */
+  .accordion-content {
+    padding: 15px;
+  }
+
+  /* Reduce font size in accordion content */
+  .accordion-content ul li {
+    font-size: 12px; /* Smaller font size */
+    margin-left: 10px;
+  }
+
+  #other-services {
+    padding-left: 20px;
+    text-align: center; /* Centers the text on mobile */
+  }
+
+  .serv-container-layout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Stack services card content vertically */
+  .services-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Adjust image size on mobile */
+  .services-image {
+    width: 100%;
+    height: auto; /* Makes image responsive */
+  }
+
+  /* Responsive width and padding for content */
+  .services-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust font size for better readability on smaller screens */
+  .services-text {
+    font-size: 14px; /* Slightly larger for readability on mobile */
+  }
+
+  .review-image {
+    padding-top: 0px;
+    width: 98%;
+  }
+}

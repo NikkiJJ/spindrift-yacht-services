@@ -71,3 +71,45 @@ label {
   color: #B02A29;
   border-bottom: 1px solid #B02A29;
 }
+
+@media (max-width: 768px) {
+  /* Stack the contact sections vertically */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Make the contact image responsive */
+  .contact-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust form layout for mobile */
+  form {
+    grid-template-columns: 1fr; /* Single-column layout */
+    gap: 10px; /* Reduced gap for mobile */
+  }
+
+  /* Center and resize the submit button */
+  .underline-button {
+    grid-column: span 1; /* Adjusts button to fit single column */
+    width: 100%; /* Full width on mobile */
+  }
+
+  /* Smaller font and reduced padding for inputs */
+  label, .input-line {
+    font-size: 14px;
+  }
+
+  .input-line {
+    padding: 6px 0;
+    margin-bottom: 15px;
+  }
+}
