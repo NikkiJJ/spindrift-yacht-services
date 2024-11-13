@@ -1,11 +1,27 @@
+/* .contact-container {
+  display: flex;
+  flex-grow: 1;
+} */
 .contact-container {
   display: flex;
   flex-grow: 1;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.contact-left {
+/* .contact-left {
   width: 50%;
   padding: 50px;
+} */
+ /* Contact left section styling */
+.contact-left {
+  width: 50%;
+  max-width: 600px; /* Ensures form and text are limited in width */
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 0px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .contact-right {
@@ -22,39 +38,62 @@
   margin-bottom: 0px;
 }
 
+/* form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+} */
 form {
-  max-width: 600px; /* Set a max-width to limit the width of the form */
-  margin: 0 auto; /* Center the form on the page */
+  max-width: 100%; /* Ensures the form doesn't exceed container width */
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Create two equal-width columns */
   gap: 20px; /* Space between columns and rows */
 }
 
-label {
-  display: block; /* Ensure each label is on its own line */
-  margin-bottom: 5px; /* Add some space between the label and the input */
+/* label {
+  display: block;
+  margin-bottom: 5px;
   font-size: 16px;
+} */
+label {
+  display: block;
+  font-size: 16px;
+  text-align: left; /* Ensure all labels are left-aligned */
 }
 
+/* .input-line {
+  width: 100%;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: none;
+  font-size: 16px;
+  outline: none;
+} */
 .input-line {
   width: 100%;
   padding: 8px 0;
-  margin-bottom: 20px; /* Add space between input fields */
+  margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid #000; /* Bottom border for the line effect */
+  border-bottom: 1px solid #000;
   background: none;
-  font-size: 16px; /* Set a smaller font size */
-  outline: none; /* Remove the default outline */
+  font-size: 16px;
+  outline: none;
+  text-align: left; /* Ensure text input is left-aligned */
 }
 
 .input-line:focus {
   border-bottom: 1px solid #B02A29; /* Change color on focus */
 }
 
-.underline-button {
+/* .underline-button {
   display: block;
-  grid-column: span 2; /* Make the button span across both columns */
-  width: 15%; /* Make the button fill the width of the form */
+  grid-column: span 2;
+  width: 15%;
   background-color: transparent;
   color: black;
   border: none;
@@ -64,7 +103,22 @@ label {
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
-  margin-top: 20px; /* Add space between the last input and the button */
+  margin-top: 20px;
+} */
+.underline-button {
+  display: block;
+  grid-column: span 2;
+  width: 15%; /* Make the button span the width of the form */
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 20px;
 }
 
 .underline-button:hover {

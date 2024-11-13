@@ -99,6 +99,10 @@
   transform: translateX(-50%); /* Centers the border */
 }
 
+.accordion-item:last-child .accordion-header::after {
+  display: none;
+}
+
 /* Number Styling */
 .accordion-header .number {
   width: 30px;

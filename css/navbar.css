@@ -30,11 +30,22 @@
   padding-bottom: 17px;
 }
 
+/* Base nav link styling */
 .navbar-custom .nav-link {
   color: #ffffff !important;
-  position: relative;
+  transition: color 0.3s ease;
   text-decoration: none;
-  font-weight: 150 !important;
+  white-space: nowrap;
+}
+
+/* Hover effect to change color to red */
+.navbar-custom .nav-link:hover {
+  color: #CE2E2D !important;
+}
+
+
+.custom-nav-link {
+  padding-bottom: 0px !important;
 }
 
 .navbar-custom .navbar-nav {
