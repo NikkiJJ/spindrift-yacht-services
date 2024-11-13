@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Navbar</title>
+  <style>
+    .navbar { background: #333; color: white; padding: 10px; }
+    .navbar-toggler { cursor: pointer; }
+    #navbarNav { display: none; background: #444; padding: 10px; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="#">Brand</a>
+    <span class="navbar-toggler">☰</span>
+    <div id="navbarNav">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+    </div>
+  </nav>
+
+  <!-- <script>
+    document.querySelector('.navbar-toggler').addEventListener('click', function() {
+      const navbarNav = document.getElementById('navbarNav');
+      navbarNav.style.display = navbarNav.style.display === 'block' ? 'none' : 'block';
+    });
+  </script> -->
+</body>
+</html>
