@@ -199,3 +199,107 @@
   height: 150px;
   align-self: center;
 }
+
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  /* Stacks the left and right sections vertically */
+  .cover-image {
+    height: 150px;
+  }
+
+  .guardianage-top {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .guardianage-top-left, .guardianage-top-right {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Adjusts the accordion width */
+  .accordion-small {
+    width: 100%;
+  }
+
+  /* Reduces font size for better readability on smaller screens */
+  .accordion-small .accordion-header .title {
+    font-size: 18px;
+  }
+
+  .accordion-small .accordion-header .icon {
+    font-size: 22px;
+  }
+
+  .accordion-small .accordion-content .column-container {
+    flex-direction: column; /* Stacks items vertically */
+    gap: 5px;
+  }
+
+  .accordion-small .accordion-content .column-container ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Reduces font size for accordion content */
+  .accordion-small .accordion-content .column-container ul li {
+    font-size: 14px;
+  }
+
+  .services-image {
+    display: none;
+  }
+
+  .bottom-text {
+    bottom: 7%; /* Adjusts hidden text to appear higher on the image */
+    padding: 10px;
+    font-size: 8px !important;
+    line-height: 1.2 !important;
+  }
+
+  .text-section {
+    font-size: 8px !important; /* Smaller font size on mobile */
+    line-height: 1.2 !important;
+  }
+
+  .text-section::after {
+    font-size: 8px !important; /* Ensures hover text is also smaller */
+    line-height: 1.2 !important;
+  }
+
+  .pop-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .packages-container {
+    width: 98%;
+  }
+
+  .image-wrapper {
+    width: 98%;
+  }
+}
+
+/* Extra Small Screen Styling */
+@media (max-width: 480px) {
+  .accordion-small .accordion-header .title {
+    font-size: 16px;
+  }
+
+  .accordion-small .accordion-header .icon {
+    font-size: 20px;
+  }
+
+  /* Further reduces padding */
+  .guardianage-top-left, .guardianage-top-right {
+    padding: 15px;
+  }
+
+  .accordion-small .accordion-content .column-container ul li {
+    font-size: 12px;
+  }
+}

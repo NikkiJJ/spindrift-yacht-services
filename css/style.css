@@ -182,3 +182,53 @@ main {
   background-color: white;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .container-layout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .first-container-text {
+    flex-direction: column;
+  }
+
+  .left-text, .right-text {
+    padding: 10px 0;
+  }
+
+  .title-text {
+    font-size: 1.5em; /* Adjust font size as needed */
+    word-wrap: break-word; /* Ensures text will break if it’s too long */
+    overflow-wrap: break-word; /* Provides additional support for wrapping */
+    white-space: normal; /* Allows text to wrap normally */
+  }
+
+  .red-text {
+    font-size: 1.2em; /* Adjust as needed */
+  }
+
+  .bottom-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .bottom-container::before {
+    width: 80%; /* Adjusts the width of the border for smaller screens */
+  }
+
+  .divider {
+    margin: 40px 0; /* Reduces margin above and below the divider */
+  }
+
+  h1 {
+    font-size: 1.4em; /* Adjusts the heading size */
+  }
+
+  p {
+    font-size: 1em; /* Adjusts paragraph text size */
+  }
+}

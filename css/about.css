@@ -28,3 +28,9 @@
 .added-padding {
   padding-left: 15px;
 }
+
+@media (max-width: 768px) {
+  .cover-image {
+    height: 150px;
+  }
+}

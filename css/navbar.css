@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+.nav-logo {
+  height: 40px;
+}
+
 #nav-sig:visited {
   color: inherit;
 }
@@ -59,5 +63,7 @@
 
 
 @media (max-width: 768px) {
-
+  .nav-logo {
+    height: 20px;
+  }
 }

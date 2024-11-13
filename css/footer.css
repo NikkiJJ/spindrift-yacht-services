@@ -61,3 +61,49 @@
   font-size: 16px;          /* Adjust the font size as needed */
   margin: 0 5px;            /* Add some margin if you want spacing between icons */
 }
+
+.social-icon-box {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .top-footer, .bottom-footer, .techni-tag {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .top-footer-left, .top-footer-right {
+    margin-bottom: 20px;
+  }
+
+  .spin-logo {
+    height: 100px; /* Adjusts the logo size for smaller screens */
+  }
+
+  .bottom-footer {
+    flex-direction: column;
+  }
+
+  .social-media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icon {
+    margin: 10px
+  }
+
+  .techni-tag {
+    font-size: smaller; /* Adjusts font size for mobile */
+    text-align: center;
+    padding-left: 0;
+  }
+
+  p, h1 {
+    font-size: 1em; /* Adjusts paragraph and heading sizes for readability on mobile */
+  }
+}
