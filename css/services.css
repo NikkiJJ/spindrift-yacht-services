@@ -265,6 +265,10 @@
     margin-left: 10px;
   }
 
+  .accordion-item.active .accordion-content {
+    max-height: 400px; /* Adjust as needed */
+  }
+
   #other-services {
     padding-left: 20px;
     text-align: center; /* Centers the text on mobile */

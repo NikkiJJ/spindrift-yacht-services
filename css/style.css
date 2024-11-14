@@ -39,6 +39,10 @@ main {
   margin: 0;
 }
 
+.bottom-cover {
+  object-position: bottom;
+}
+
 .image-container {
   position: relative;
   display: inline-block;
@@ -74,7 +78,7 @@ main {
 }
 
 .red-text {
-  color: #B02A29;
+  color: #CE2E2D;
   padding-top: 20px;
 }
 
@@ -108,7 +112,7 @@ main {
 
 .button:hover {
   color: white;
-  background-color: #B02A29;
+  background-color: #CE2E2D;
   text-decoration: none;
 }
 
@@ -208,7 +212,7 @@ main {
 }
 
 .underline-button:hover {
-  color: #B02A29;
+  color: #CE2E2D;
   text-decoration: none;
 }
 
