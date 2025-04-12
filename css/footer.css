@@ -66,6 +66,15 @@
   display: flex;
 }
 
+.techni-link:link,
+.techni-link:visited,
+.techni-link:hover,
+.techni-link:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
 @media (max-width: 768px) {
   .top-footer, .bottom-footer, .techni-tag {
     flex-direction: column;
